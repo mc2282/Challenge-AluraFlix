@@ -29,15 +29,15 @@ export class VideosService {
   ]
 
   listaVideos: Video[] = [
-    { title: "Front end", category: "frontend", imageUrl: "../../../assets/images/frontend_1.jpg", videoUrl: "", description: "", id: 1 },
-    { title: "Front end", category: "frontend", imageUrl: "../../../assets/images/frontend_2.jpg", videoUrl: "", description: "", id: 2 },
-    { title: "Front end", category: "frontend", imageUrl: "../../../assets/images/frontend_3.jpg", videoUrl: "", description: "", id: 3 },
-    { title: "Back end", category: "backend", imageUrl: "../../../assets/images/backend_1.jpg", videoUrl: "", description: "", id: 4 },
-    { title: "Back end", category: "backend", imageUrl: "../../../assets/images/backend_2.jpg", videoUrl: "", description: "", id: 5 },
-    { title: "Back end", category: "backend", imageUrl: "../../../assets/images/backend_3.jpg", videoUrl: "", description: "", id: 6 },
-    { title: "Innovación y Gestión", category: "innovacion", imageUrl: "../../../assets/images/innovacion_1.jpg", videoUrl: "", description: "", id: 7 },
-    { title: "Innovación y Gestión", category: "innovacion", imageUrl: "../../../assets/images/innovacion_2.jpg", videoUrl: "", description: "", id: 8 },
-    { title: "Innovación y Gestión", category: "innovacion", imageUrl: "../../../assets/images/innovacion_3.jpg", videoUrl: "", description: "", id: 9 }
+    { title: "Front end", category: "frontend", imageUrl: "/assets/images/frontend_1.jpg", videoUrl: "", description: "", id: 1 },
+    { title: "Front end", category: "frontend", imageUrl: "/assets/images/frontend_2.jpg", videoUrl: "", description: "", id: 2 },
+    { title: "Front end", category: "frontend", imageUrl: "/assets/images/frontend_3.jpg", videoUrl: "", description: "", id: 3 },
+    { title: "Back end", category: "backend", imageUrl: "/assets/images/backend_1.jpg", videoUrl: "", description: "", id: 4 },
+    { title: "Back end", category: "backend", imageUrl: "/assets/images/backend_2.jpg", videoUrl: "", description: "", id: 5 },
+    { title: "Back end", category: "backend", imageUrl: "/assets/images/backend_3.jpg", videoUrl: "", description: "", id: 6 },
+    { title: "Innovación y Gestión", category: "innovacion", imageUrl: "/assets/images/innovacion_1.jpg", videoUrl: "", description: "", id: 7 },
+    { title: "Innovación y Gestión", category: "innovacion", imageUrl: "/assets/images/innovacion_2.jpg", videoUrl: "", description: "", id: 8 },
+    { title: "Innovación y Gestión", category: "innovacion", imageUrl: "/assets/images/innovacion_3.jpg", videoUrl: "", description: "", id: 9 }
   ];
 
   getVideos() {

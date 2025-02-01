@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "challenge-flix": {
+    "challenge-aluraflix": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/challenge-flix",
+            "outputPath": "dist/challenge-aluraflix",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "challenge-flix:build:production"
-            },
-            "development": {
-              "buildTarget": "challenge-flix:build:development"
+              "buildTarget": "challenge-aluraflix:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +65,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "challenge-flix:build"
+            "buildTarget": "challenge-aluraflix:build"
           }
         },
         "test": {
@@ -88,6 +85,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
