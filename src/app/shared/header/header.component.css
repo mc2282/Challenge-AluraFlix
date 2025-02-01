@@ -36,8 +36,8 @@
   border: 2px solid var(--text-primary-color);
 }
 
-#btnNuevoVideo,
-#btnHome {
+.btnNuevoVideo,
+.btnHome {
   font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 900;
