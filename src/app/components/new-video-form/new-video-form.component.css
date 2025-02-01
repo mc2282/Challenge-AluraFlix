@@ -13,6 +13,7 @@
   width: 100%;
   flex-direction: column;
   color: var(--text-primary-color);
+  margin: 1em;
 }
 
 .newVideo_form {
@@ -27,8 +28,8 @@
   height: fit-content;
   padding-top: 0.2em;
   padding-bottom: 2em;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 7em;
+  padding-right: 7em;
   position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -71,6 +72,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 1em;
 }
 
 .btn_cross {

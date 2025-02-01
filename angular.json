@@ -56,7 +56,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
+            "development": {
               "buildTarget": "challenge-aluraflix:build:development"
             }
           },
