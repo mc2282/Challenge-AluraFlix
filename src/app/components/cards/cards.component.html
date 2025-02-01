@@ -1,0 +1,41 @@
+<div>
+  @for(categ of listaCategories; track categ.id){
+
+  <p class="{{categ.tag}}_header">{{categ.title}}</p>
+  <!--para cada categoria se crea un contenedor de tarjetas-->
+  <div class="cards_container">
+    @for(video of listaVideos; track video.id){
+
+    <!--si la categoria del video es igual a la categoria del array-->
+    @if(video.category==categ.tag){
+    <div class="card" id="card_{{categ.tag}}">
+      <img src="{{video.imageUrl}}" alt="{{video.title}}" class='card_img' (click)="mostrarCardInfo(video)" />
+
+      <div class="card_buttons_container">
+        <button class="card_btn_delete" (click)="eliminarVideo(video)">
+          <img src="../../../assets/icons/icon_delete_white.svg" class="card_icon" alt="Delete icon" />
+          Borrar
+        </button>
+
+        <button class="card_btn_edit" (click)="mostrarEditVideoForm(video)">
+          <img src="../../../assets/icons/icon_edit_white.svg" class="card_icon" alt="Edit icon" />Editar
+        </button>
+      </div>
+    </div>
+
+    @if(editFormState){
+    <app-edit-video-form [videoAEditar]="videoAEditar" (close)="closeEditVideoForm()" />
+    }@else{<div></div>}
+
+    @if(cardInfoState){
+    <app-card-info [videoInfo]="videoInfo" (close)="closeCardInfo()" />
+    }@else{<div></div>}
+    }
+    }
+
+    @empty{
+    <p>No se encontraron videos.</p>
+    }
+  </div>
+  }
+</div>

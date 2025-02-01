@@ -1,0 +1,37 @@
+<div class="container_newVideo_form">
+  <form [formGroup]="newVideoForm" class="newVideo_form" (ngSubmit)="onSubmit()">
+
+    <img class=" btn_cross" (click)="closeNewVideoForm()" src="../../../assets/icons/icon_cross.svg"
+      alt="Close window icon" />
+
+    <div class="container_campos">
+      <h3>Agregar nuevo video: </h3>
+      <label>Titulo: </label>
+      <input name="titulo" formControlName="title" class="newVideo_form_input" placeholder="Agregar un titulo"
+        type="text" required />
+      <label>Categoría: </label>
+      <select name="category" placeholder="Agregar categoria" class="newVideo_form_select" formControlName="category"
+        required>
+        <option value="" disabled>Seleccione una categoría</option>
+        @for (categ of listaCategorias; track categ.id){
+        <option value="{{categ.tag}}">{{categ.title}}</option>
+        }
+      </select>
+      <label>Imagen: </label>
+      <input name="imageUrl" class="newVideo_form_input" placeholder="Agregar url de imagen" type="text"
+        formControlName="imageUrl" required />
+      <label>Url: </label>
+      <input name="videoUrl" class="newVideo_form_input" placeholder="Agregar Url de video" type="text"
+        formControlName="videoUrl" required />
+      <label>Descripción: </label>
+      <input class="newVideo_form_input" placeholder="Agregar una descripcion" type="text" name="description"
+        formControlName="description" required />
+
+      <div class="newVideo_buttons_container">
+        <button class="form_btn_guardar" type="submit">Guardar</button>
+        <button class="form_btn_limpiar" type="button" (click)="limpiarDatos()">Limpiar</button>
+      </div>
+
+    </div>
+  </form>
+</div>

@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  /* text */
+  --text-primary-color: rgba(255, 255, 255, 1);
+  --text-secondary-color: rgba(245, 245, 245, 1);
+  --text-tertiary-color: rgba(165, 165, 165, 1);
+
+  /*header & footer*/
+  --header-background: rgba(38, 38, 38, 1);
+  --footer-background: rgba(0, 0, 0, 0.9);
+  --blue: rgba(34, 113, 209, 1);
+  --blueline-shadow: rgba(34, 113, 209, 0.7);
+
+  /*cards*/
+  --card-light-blue: rgba(107, 209, 255, 1);
+  --card-green: rgba(0, 200, 111, 1);
+  --card-yellow: rgba(255, 186, 5, 1);
+
+  /*home*/
+  --background-color: rgba(0, 0, 0, 0.9);
+  --home-shadow: rgba(0, 18, 51, 0.56);
+
+  /*edit-delete windows*/
+  --edit-form-background: rgba(3, 18, 47, 1);
+  --edit-form-border: rgba(107, 209, 255, 1);
+  --edit-form-input-border: rgba(34, 113, 209, 1);
+  --background-shadow-edit-form: rgba(0, 0, 0, 0.9);
+  --error-color: rgba(229, 57, 53, 1);
+}
+
+body {
+  font-family: "Source Sans 3", serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--blue)
+}
+
+.button {
+  cursor: pointer;
+}
+
+.btn_cross {
+  width: 30px;
+  height: 30px
+}

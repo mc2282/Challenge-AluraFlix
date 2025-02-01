@@ -1,0 +1,16 @@
+<div class="container_cardInfo">
+
+  <div class="cardInfo">
+    <img class="btn_cross" (click)="closeCardInfo()" src="../../../assets/icons/icon_cross.svg"
+      alt="Close window icon" />
+    <div class='cardInfo_left'>
+      <p>Titulo: {{videoInfo.title}}</p>
+      <p>Categoria: {{videoInfo.category}}</p>
+      <p>Descripcion: {{videoInfo.description}}</p>
+      <p>Url: {{videoInfo.videoUrl}}</p>
+    </div>
+    <div class='cardInfo_right'>
+      <img src="{{videoInfo.imageUrl}}" alt="" />
+    </div>
+  </div>
+</div>

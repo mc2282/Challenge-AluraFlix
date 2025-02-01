@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 4px solid var(--blue);
+  box-shadow: 0px 5px 29px rgba(34, 113, 209, 0.7);
+}
+
+.footer_img {
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 120px;
+}

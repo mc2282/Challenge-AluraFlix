@@ -1,0 +1,30 @@
+<div class="container_edit_form">
+  <form [formGroup]="editVideoForm" class='edit_form' (ngSubmit)="onSubmit()">
+    <img class="btn_cross" (click)="closeEditVideoForm()" src="../../../assets/icons/icon_cross.svg"
+      alt="Close window icon" />
+
+    <div class="container_campos">
+      <h3>Editar video: </h3>
+      <label>Título: </label>
+      <input class="edit_form_input" formControlName="title" />
+      <label>Categoría: </label>
+      <select class="edit_form_select" formControlName="category">
+        <option value="" disabled>Seleccione una categoría </option>
+        @for(categ of listaCategorias; track categ.id){
+        <option value="{{categ.tag}}">{{categ.title}}</option>
+        }
+      </select>
+      <label>Imagen: </label>
+      <input class="edit_form_input" formControlName="imageUrl" />
+      <label>Descrición: </label>
+      <input class="edit_form_input" formControlName="description" />
+      <label>Url:</label>
+      <input class="edit_form_input" formControlName="videoUrl" />
+
+      <div class="edit_buttons_container">
+        <button type="submit" class="form_btn_guardar">Guardar</button>
+        <button type="button" class="form_btn_limpiar" (click)="limpiarDatos()">Limpiar</button>
+      </div>
+    </div>
+  </form>
+</div>

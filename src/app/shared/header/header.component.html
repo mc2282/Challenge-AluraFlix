@@ -1,0 +1,21 @@
+<header id="header">
+
+  <nav class="navbar">
+    <img src="../../../assets/images/logo_Alura.png" alt='Logo Alura' />
+
+    <div class="buttons_container">
+      <button class="btnHome">Home</button>
+      <button class="btnNuevoVideo" (click)="mostrarNewVideoForm()">Nuevo Video</button>
+    </div>
+
+  </nav>
+
+  @if(newVideoFormState){
+  <app-new-video-form (close)="mostrarNewVideoForm()" />
+  }
+  @else {
+  <div></div>
+  }
+
+
+</header>
